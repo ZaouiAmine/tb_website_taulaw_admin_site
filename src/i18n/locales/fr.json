@@ -1,0 +1,787 @@
+{
+  "dir": "ltr",
+  "common": {
+    "dashboard": "Tableau de bord",
+    "logout": "Déconnexion",
+    "all": "Tous",
+    "lawyer": "Avocat",
+    "officer": "Employé judiciaire",
+    "type": "Type",
+    "client": "Client",
+    "role": "Rôle",
+    "user": "Utilisateur",
+    "loading": "Chargement...",
+    "updating": "Mise à jour...",
+    "saving": "Sauvegarde...",
+    "deleting": "Suppression...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Sauvegarder",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "actions": "Actions",
+    "view": "Voir",
+    "update": "Mettre à jour",
+    "create": "Créer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "reset": "Réinitialiser",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "select": "Sélectionner",
+    "clear": "Effacer",
+    "refresh": "Actualiser",
+    "download": "Télécharger",
+    "upload": "Téléverser",
+    "export": "Exporter",
+    "import": "Importer",
+    "print": "Imprimer",
+    "share": "Partager",
+    "copy": "Copier",
+    "accept": "Accepter",
+    "rowsPerPage": "Lignes par page :",
+    "areYouSure": "Êtes-vous absolument sûr ?",
+    "aboutToAccept": "Vous êtes sur le point d'accepter l'avocat :",
+    "aboutToDelete": "Vous êtes sur le point de supprimer :"
+  },
+  "navigation": {
+    "dashboard": "Tableau de bord",
+    "lawyerRequests": "Demandes d'avocats",
+    "adsManagement": "Gestion des publicités",
+    "lawyerPackages": "Bacques des avocats",
+    "transactions": "Transactions",
+    "dropdownManagement": "Gestion des listes déroulantes",
+    "casePhase": "Phase de dossier",
+    "caseCategory": "Catégorie de dossier",
+    "caseChamber": "Chambre de dossier",
+    "specialization": "Spécialisations",
+    "states": "États",
+    "pendingLawyers": "Demandes de documentation",
+    "reportsManagement": "Gestion des rapports",
+    "consultationPackages": "Forfaits de consultation"
+  },
+  "lawyerPackages": {
+    "title": "Forfaits de consultation",
+    "description": "Description",
+    "addPackage": "Ajouter un forfait",
+    "editPackage": "Modifier un forfait",
+    "deletePackage": "Supprimer un forfait",
+    "path": "Forfaits avocats / Liste",
+    "packageDeleted": "Forfait supprimé avec succès",
+    "packageAdded": "Forfait ajouté avec succès",
+    "packageUpdated": "Forfait mis à jour avec succès",
+    "packageDeletedError": "Échec de la suppression du forfait",
+    "packageAddedError": "Échec de l'ajout du forfait",
+    "packageUpdatedError": "Échec de la mise à jour du forfait",
+    "packageDeletedSuccess": "Forfait supprimé avec succès",
+    "packageAddedSuccess": "Forfait ajouté avec succès",
+    "packageUpdatedSuccess": "Forfait mis à jour avec succès",
+    "addPage": {
+      "breadcrumbAdd": "Forfaits des avocats / Ajouter",
+      "createTitle": "Créer un forfait avocat",
+      "namePlaceholder": "ex : Forfait Gold",
+      "nameRequired": "Le nom est obligatoire",
+      "disableHint": "Désactivez ce forfait pour le masquer aux avocats.",
+      "createButton": "Créer le forfait",
+      "cancelButton": "Annuler",
+      "name": "Nom",
+      "updateButton": "Mettre à jour le forfait",
+      "isActivePlaceholder": "Statut actif",
+      "isActiveDescription": "Désactivez ce forfait pour le masquer aux avocats.",
+      "numberOfCasesPlaceholder": "Nombre de cas",
+      "numberOfCasesRequired": "Le nombre de cas est obligatoire",
+      "numberOfAssistantsPlaceholder": "Nombre d'assistants",
+      "numberOfAssistantsRequired": "Le nombre d'assistants est obligatoire",
+      "durationPlaceholder": "Durée (jours)",
+      "durationRequired": "La durée (jours) est obligatoire",
+      "pricePlaceholder": "Prix",
+      "priceRequired": "Le prix est obligatoire",
+      "headingPlaceholder": "Titre",
+      "headingRequired": "Le titre est obligatoire",
+      "deletedSuccessfully": "Supprimé avec succès",
+      "deletedFailed": "Échec de la suppression",
+      "updatedSuccessfully": "Mis à jour avec succès",
+      "updatedFailed": "Échec de la mise à jour",
+      "addedSuccessfully": "Ajouté avec succès",
+      "addedFailed": "Échec de l'ajout"
+    },
+    "table": {
+      "name": "Nom",
+      "price": "Prix",
+      "duration": "Durée",
+      "actions": "Actions",
+      "numberOfCases": "Nombre de cas",
+      "numberOfAssistants": "Nombre d'assistants",
+      "durationInDays": "Durée (Jours)",
+      "status": "Status",
+      "statusActive": "Actif",
+      "statusInactive": "Inactif"
+    }
+  },
+  "subscriptions": {
+    "title": "Historique des abonnements",
+    "breadcrumb": "Forfaits avocats > Historique des abonnements",
+    "table": {
+      "lawyerName": "Nom de l'avocat",
+      "packageName": "Nom du forfait",
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "price": "Prix",
+      "status": "Statut"
+    },
+    "status": {
+      "active": "Actif",
+      "expired": "Expiré",
+      "cancelled": "Annulé"
+    }
+  },
+  "home": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue dans le tableau de bord administrateur",
+    "overview": "Aperçu",
+    "statistics": "Statistiques",
+    "filters": {
+      "lawyerName": "Nom d'utilisateur",
+      "selectLawyer": "Sélectionner un avocat",
+      "allLawyers": "Tous les avocats",
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "datePlaceholder": "mm/jj/aaaa"
+    },
+    "charts": {
+      "totalCount": "Nombre total",
+      "value": "Valeur",
+      "formRequests": "Nombre de demandes de formulaires",
+      "formRequestsLawyer": "Nombre de demandes de formulaires (Avocat)",
+      "formRequestsOfficer": "Nombre de demandes de formulaires (Officier)",
+      "numberOfCases": "Nombre de cas",
+      "numberOfPublishedConsultations": "Nombre de consultations publiées",
+      "numberOfPublishedCases": "Nombre de cas publiés",
+      "numberOfpublicationsLawyerAndJudgeEmployee": "Nombre de publications (avocat + employé judiciaire)",
+      "numberOfConsultingTransactions": "Nombre de transactions de consultation",
+      "numberOfAiImage": "Nombre d'images avec intelligence artificielle",
+      "numberOfAiPetitions": "Nombre de requêtes avec intelligence artificielle",
+      "monthlyData": "Données mensuelles",
+      "analytics": "Analyses",
+      "reports": "Rapports"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Fév",
+      "mar": "Mar",
+      "apr": "Avr",
+      "may": "Mai",
+      "jun": "Juin",
+      "jul": "Juil",
+      "aug": "Août",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Déc"
+    },
+    "sections": {
+      "judgeEmployee": "Employé judiciaire",
+      "lawyer": "Avocat"
+    }
+  },
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "signIn": "Se connecter",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "enterEmail": "Entrez votre e-mail",
+    "enterPassword": "Entrez votre mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "rememberMe": "Se souvenir de moi",
+    "loginSuccess": "Connexion réussie",
+    "loginError": "Échec de la connexion",
+    "logoutSuccess": "Déconnexion réussie",
+    "loginDescription": "Connectez-vous pour accéder à votre compte et explorer toutes les fonctionnalités.",
+    "loginFailed": "Échec de la connexion. Veuillez réessayer.",
+    "logoutConfirm": "Êtes-vous sûr de vouloir vous déconnecter ?"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "email": "Veuillez entrer un e-mail valide",
+    "password": "Le mot de passe doit contenir au moins 6 caractères",
+    "confirmPassword": "Les mots de passe doivent correspondre",
+    "minLength": "La longueur minimale est de {{min}} caractères",
+    "maxLength": "La longueur maximale est de {{max}} caractères"
+  },
+  "messages": {
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+    "unsavedChanges": "Vous avez des modifications non sauvegardées. Êtes-vous sûr de vouloir partir ?",
+    "operationSuccess": "Opération terminée avec succès",
+    "operationError": "Une erreur s'est produite lors du traitement de votre demande",
+    "noData": "Aucune donnée disponible",
+    "connectionError": "Erreur de connexion. Veuillez réessayer.",
+    "permissionDenied": "Permission refusée",
+    "sessionExpired": "Session expirée. Veuillez vous reconnecter."
+  },
+  "toasts": {
+    "success": {
+      "casePhaseSaved": "Phase de dossier sauvegardée avec succès !",
+      "caseChamberSaved": "Chambre de dossier sauvegardée avec succès !",
+      "caseCategorySaved": "Catégorie de dossier sauvegardée avec succès !",
+      "specializationsSaved": "spécialisations de dossier sauvegardée avec succès !",
+      "specializationsUpdated": "spécialisations mises à jour avec succès !",
+      "specializationsDeleted": "spécialisations supprimées avec succès !",
+      "stateSaved": "État sauvegardé avec succès !",
+      "bannerSaved": "Bannière sauvegardée avec succès !",
+      "bannerUpdated": "Bannière mise à jour avec succès !",
+      "bannerDeleted": "Bannière supprimée avec succès !",
+      "consultationPackageSaved": "Forfait de consultation enregistré avec succès !",
+      "consultationPackageUpdated": "Forfait de consultation mis à jour avec succès !",
+      "consultationPackageDeleted": "Forfait de consultation supprimé avec succès !",
+      "updateSuccess": "Mise à jour réussie !",
+      "deleteSuccess": "Suppression réussie !"
+    },
+    "error": {
+      "createFailed": "Échec de la création. Veuillez réessayer.",
+      "updateFailed": "Échec de la mise à jour. Veuillez réessayer.",
+      "deleteFailed": "Échec de la suppression. Veuillez réessayer.",
+      "fetchFailed": "Échec de la récupération des données. Veuillez réessayer."
+    }
+  },
+  "pages": {
+    "consultationPackages": {
+      "title": "Forfaits de consultation",
+      "path": "Forfaits de consultation > Liste",
+      "loading": "Chargement des forfaits de consultation...",
+      "noData": "Aucun forfait de consultation trouvé",
+      "addPackage": "Ajouter un forfait",
+      "editPackage": "Modifier le forfait",
+      "editTitle": "Modifier le forfait de consultation",
+      "packageName": "Nom du forfait",
+      "numberOfConsultations": "Nombre de consultations",
+      "price": "Prix",
+      "status": "Statut",
+      "statusMessages": {
+        "active": "Forfait activé avec succès",
+        "inactive": "Forfait désactivé avec succès"
+      },
+      "actions": "Actions",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce forfait ?",
+      "deleteSuccess": "Forfait supprimé avec succès",
+      "updateStatusSuccess": "Statut du forfait mis à jour avec succès",
+      "validation": {
+        "nameRequired": "Le nom du forfait est requis",
+        "numberOfConsultationsRequired": "Le nombre de consultations doit être d'au moins 1",
+        "priceRequired": "Le prix doit être un nombre positif"
+      },
+      "fields": {
+        "name": "Nom du forfait",
+        "numberOfConsultations": "Nombre de consultations",
+        "price": "Prix",
+        "isActive": "Est actif",
+        "enterName": "Entrez le nom du forfait",
+        "enterNumberOfConsultations": "Entrez le nombre de consultations",
+        "enterPrice": "Entrez le prix"
+      },
+      "form": {
+        "packageDetails": "Détails du forfait",
+        "packageName": "Nom du forfait",
+        "namePlaceholder": "Entrez le nom du forfait",
+        "numberOfConsultations": "Nombre de consultations",
+        "consultationsPlaceholder": "Entrez le nombre de consultations",
+        "price": "Prix",
+        "pricePlaceholder": "Entrez le prix",
+        "isActive": "Est actif",
+        "save": "Enregistrer le forfait",
+        "update": "Mettre à jour le forfait"
+      }
+    },
+    "lawyerRequests": {
+      "title": "Demandes d'avocats",
+      "path": "Demandes d'avocats > Liste",
+      "loading": "Chargement des demandes d'avocats...",
+      "searchPlaceholder": "Rechercher des avocats par nom, e-mail, téléphone ou adresse...",
+      "columns": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Numéro de téléphone",
+        "address": "Adresse"
+      },
+      "actions": {
+        "accept": "Accepter",
+        "accepted": "Accepté"
+      }
+    },
+    "platformFees": {
+      "title": "Frais de plateforme",
+      "path": "Frais de plateforme > Ajouter des frais de plateforme",
+      "addTitle": "Ajouter des frais de plateforme",
+      "fields": {
+        "platformFee": "Frais de plateforme",
+        "enterPlatformFee": "Entrez les frais de plateforme",
+        "valueType": "Type de valeur",
+        "percentage": "Pourcentage",
+        "fixed": "Fixe",
+        "value": "Valeur",
+        "valuePlaceholder": "0%"
+      }
+    },
+    "transactions": {
+      "title": "Transactions",
+      "path": "Transactions > Liste",
+      "columns": {
+        "clientName": "Nom du client",
+        "lawyerName": "Nom de l'avocat",
+        "answerPrice": "Prix de la réponse",
+        "platformFees": "Frais de plateforme",
+        "lawyerShare": "Part de l'avocat",
+        "transactionDate": "Date de transaction"
+      },
+      "dateFilter": "Filtrer par date"
+    },
+    "casePhase": {
+      "title": "Phase de dossier",
+      "path": "Gestion des listes déroulantes > Phase de dossier",
+      "addTitle": "Ajouter une phase de dossier",
+      "editTitle": "Modifier la phase de dossier",
+      "list": "Liste des phases de dossier",
+      "loading": "Chargement des phases de dossier...",
+      "columns": {
+        "valueKey": "Clé de valeur",
+        "english": "Anglais",
+        "arabic": "Arabe",
+        "french": "Français"
+      }
+    },
+    "caseCategory": {
+      "title": "Catégorie de dossier",
+      "path": "Gestion des listes déroulantes > Catégorie de dossier",
+      "addTitle": "Ajouter une catégorie de dossier",
+      "editTitle": "Modifier la catégorie de dossier",
+      "list": "Liste des catégories de dossier",
+      "loading": "Chargement des catégories de dossier...",
+      "columns": {
+        "valueKey": "Clé de valeur",
+        "english": "Anglais",
+        "arabic": "Arabe",
+        "french": "Français"
+      }
+    },
+    "caseChamber": {
+      "title": "Chambre de dossier",
+      "path": "Gestion des listes déroulantes > Chambre de dossier",
+      "addTitle": "Ajouter une chambre de dossier",
+      "editTitle": "Modifier la chambre de dossier",
+      "list": "Liste des chambres de dossier",
+      "loading": "Chargement des chambres de dossier...",
+      "columns": {
+        "valueKey": "Clé de valeur",
+        "english": "Anglais",
+        "arabic": "Arabe",
+        "french": "Français"
+      }
+    },
+    "specialization": {
+      "title": "Spécialisations",
+      "path": "Gestion des listes déroulantes > Spécialisations",
+      "addTitle": "Ajouter une spécialisation",
+      "editTitle": "Modifier la spécialisation",
+      "list": "Liste des spécialisations",
+      "loading": "Chargement des spécialisations...",
+      "columns": {
+        "valueKey": "Clé de valeur",
+        "english": "Anglais",
+        "arabic": "Arabe",
+        "french": "Français"
+      }
+    },
+    "states": {
+      "title": "États",
+      "path": "Gestion des listes déroulantes > États",
+      "addTitle": "Ajouter un état",
+      "editTitle": "Modifier l'état",
+      "list": "Liste des états",
+      "loading": "Chargement des états...",
+      "columns": {
+        "english": "Anglais",
+        "arabic": "Arabe",
+        "french": "Français"
+      }
+    },
+    "banners": {
+      "title": "Bannières",
+      "path": "Bannières > Liste",
+      "addTitle": "Ajouter une bannière",
+      "editTitle": "Modifier la bannière",
+      "list": "Liste des bannières",
+      "loading": "Chargement des bannières...",
+      "columns": {
+        "image": "Image",
+        "link": "Lien",
+        "status": "Statut"
+      },
+      "fields": {
+        "image": "Image de bannière",
+        "link": "Lien",
+        "status": "Statut",
+        "enterLink": "Entrez l'URL du lien",
+        "uploadImage": "Télécharger l'image de bannière"
+      },
+      "validation": {
+        "linkRequired": "Le lien est requis",
+        "linkInvalid": "Veuillez entrer une URL valide (ex: https://example.com)",
+        "imageRequired": "L'image de bannière est requise"
+      },
+      "status": {
+        "active": "Actif",
+        "inactive": "Inactif"
+      }
+    },
+    "pendingLawyers": {
+      "title": "Demandes de documentation",
+      "path": "Demandes de documentation > Liste",
+      "loading": "Chargement des demandes de documentation...",
+      "searchPlaceholder": "Rechercher des demandes de documentation par nom, e-mail, téléphone ou adresse...",
+      "columns": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Numéro de téléphone",
+        "address": "Adresse",
+        "status": "Statut",
+        "role": "Role",
+        "files": "Fichiers"
+      },
+      "actions": {
+        "verify": "Vérifier",
+        "verified": "Vérifié"
+      }
+    },
+    "reportsManagement": {
+      "title": "Gestion des signalements",
+      "path": "Gestion des signalements > Liste",
+      "loading": "Chargement des signalements...",
+      "selectAction": "Veuillez sélectionner une action",
+      "pleaseAddPeriod": "please add the period",
+      "actionSuccess": "Action success",
+      "takeAction": "Prendre une action",
+      "columns": {
+        "createdBy": "Créé par",
+        "createdByRole": "Rôle du créateur",
+        "phone": "Contenu du post",
+        "reportedBy": "Signalé par",
+        "reportedByRole": "Rôle du rapporteur",
+        "comment": "Commentaire",
+        "status": "Statut"
+      },
+      "actions": {
+        "takeAction": "Prendre une action",
+        "dismissReport": "Ignorer le signalement",
+        "panUser": "Bannir l'utilisateur",
+        "panPost": "Bannir le post",
+        "fullPan": "Bannissement définitif",
+        "pickDate": "Select Date",
+        "untilDate": "Ban untill",
+        "addPeriod": "Bannissement temporaire",
+        "periodDays": "Nombre de jours",
+        "enterDays": "Saisir le nombre de jours",
+        "requireAction": "Nécessite une action",
+        "fullBan": "Bannissement complet",
+        "partialBan": "Partial Ban",
+        "postsBan": "Bannissement des publications",
+        "ignored": "Ignoré",
+        "lawyer": "Avocat",
+        "client": "Client",
+        "officer": "Officier",
+        "all": "Tout",
+        "admin": "Administrateur"
+      },
+      "pages": {
+        "lawyerRequests": {
+          "title": "Demandes d'avocats",
+          "path": "Demandes d'avocats > Liste",
+          "loading": "Chargement des demandes d'avocats...",
+          "searchPlaceholder": "Rechercher des avocats par nom, e-mail, téléphone ou adresse...",
+          "columns": {
+            "name": "Nom",
+            "email": "E-mail",
+            "phone": "Numéro de téléphone",
+            "address": "Adresse"
+          },
+          "actions": {
+            "accept": "Accepter",
+            "accepted": "Accepté"
+          }
+        },
+        "platformFees": {
+          "title": "Frais de plateforme",
+          "path": "Frais de plateforme > Ajouter des frais de plateforme",
+          "addTitle": "Ajouter des frais de plateforme",
+          "fields": {
+            "platformFee": "Frais de plateforme",
+            "enterPlatformFee": "Entrez les frais de plateforme",
+            "valueType": "Type de valeur",
+            "percentage": "Pourcentage",
+            "fixed": "Fixe",
+            "value": "Valeur",
+            "valuePlaceholder": "0%"
+          }
+        },
+        "transactions": {
+          "title": "Transactions",
+          "path": "Transactions > Liste",
+          "columns": {
+            "clientName": "Nom du client",
+            "lawyerName": "Nom de l'avocat",
+            "answerPrice": "Prix de la réponse",
+            "platformFees": "Frais de plateforme",
+            "lawyerShare": "Part de l'avocat",
+            "transactionDate": "Date de transaction"
+          },
+          "dateFilter": "Filtrer par date"
+        },
+        "casePhase": {
+          "title": "Phase de dossier",
+          "path": "Gestion des listes déroulantes > Phase de dossier",
+          "addTitle": "Ajouter une phase de dossier",
+          "editTitle": "Modifier la phase de dossier",
+          "list": "Liste des phases de dossier",
+          "loading": "Chargement des phases de dossier...",
+          "columns": {
+            "valueKey": "Clé de valeur",
+            "english": "Anglais",
+            "arabic": "Arabe",
+            "french": "Français"
+          }
+        },
+        "caseCategory": {
+          "title": "Catégorie de dossier",
+          "path": "Gestion des listes déroulantes > Catégorie de dossier",
+          "addTitle": "Ajouter une catégorie de dossier",
+          "editTitle": "Modifier la catégorie de dossier",
+          "list": "Liste des catégories de dossier",
+          "loading": "Chargement des catégories de dossier...",
+          "columns": {
+            "valueKey": "Clé de valeur",
+            "english": "Anglais",
+            "arabic": "Arabe",
+            "french": "Français"
+          }
+        },
+        "caseChamber": {
+          "title": "Chambre de dossier",
+          "path": "Gestion des listes déroulantes > Chambre de dossier",
+          "addTitle": "Ajouter une chambre de dossier",
+          "editTitle": "Modifier la chambre de dossier",
+          "list": "Liste des chambres de dossier",
+          "loading": "Chargement des chambres de dossier...",
+          "columns": {
+            "valueKey": "Clé de valeur",
+            "english": "Anglais",
+            "arabic": "Arabe",
+            "french": "Français"
+          }
+        },
+        "specialization": {
+          "title": "Spécialisations",
+          "path": "Gestion des listes déroulantes > Spécialisations",
+          "addTitle": "Ajouter une spécialisation",
+          "editTitle": "Modifier la spécialisation",
+          "list": "Liste des spécialisations",
+          "loading": "Chargement des spécialisations...",
+          "columns": {
+            "valueKey": "Clé de valeur",
+            "english": "Anglais",
+            "arabic": "Arabe",
+            "french": "Français"
+          }
+        },
+        "states": {
+          "title": "États",
+          "path": "Gestion des listes déroulantes > États",
+          "addTitle": "Ajouter un état",
+          "editTitle": "Modifier l'état",
+          "list": "Liste des états",
+          "loading": "Chargement des états...",
+          "columns": {
+            "english": "Anglais",
+            "arabic": "Arabe",
+            "french": "Français"
+          }
+        },
+        "banners": {
+          "title": "Bannières",
+          "path": "Bannières > Liste",
+          "addTitle": "Ajouter une bannière",
+          "editTitle": "Modifier la bannière",
+          "list": "Liste des bannières",
+          "loading": "Chargement des bannières...",
+          "columns": {
+            "image": "Image",
+            "link": "Lien",
+            "status": "Statut"
+          },
+          "fields": {
+            "image": "Image de bannière",
+            "link": "Lien",
+            "status": "Statut",
+            "enterLink": "Entrez l'URL du lien",
+            "uploadImage": "Télécharger l'image de bannière"
+          },
+          "validation": {
+            "linkRequired": "Le lien est requis",
+            "linkInvalid": "Veuillez entrer une URL valide (ex: https://example.com)",
+            "imageRequired": "L'image de bannière est requise"
+          },
+          "status": {
+            "active": "Actif",
+            "inactive": "Inactif"
+          }
+        },
+        "pendingLawyers": {
+          "title": "Documentation des avocats",
+          "path": "Documentation des avocats > Liste",
+          "loading": "Chargement des avocats en attente...",
+          "searchPlaceholder": "Rechercher des avocats par nom, e-mail, téléphone ou adresse...",
+          "columns": {
+            "name": "Nom",
+            "email": "E-mail",
+            "phone": "Numéro de téléphone",
+            "address": "Adresse",
+            "status": "Statut",
+            "files": "Fichiers"
+          },
+          "actions": {
+            "verify": "Vérifier",
+            "verified": "Vérifié"
+          }
+        },
+        "reportsManagement": {
+          "title": "Gestion des signalements",
+          "path": "Gestion des signalements > Liste",
+          "loading": "Chargement des signalements...",
+          "selectAction": "Veuillez sélectionner une action",
+          "pleaseAddPeriod": "please add the period",
+          "actionSuccess": "Action success",
+          "takeAction": "Prendre une action",
+          "columns": {
+            "createdBy": "Créé par",
+            "createdByRole": "Rôle du créateur",
+            "phone": "Contenu du post",
+            "reportedBy": "Signalé par",
+            "reportedByRole": "Rôle du rapporteur",
+            "comment": "Commentaire",
+            "status": "Statut"
+          },
+          "actions": {
+            "takeAction": "Prendre une action",
+            "dismissReport": "Ignorer le signalement",
+            "panUser": "Bannir l'utilisateur",
+            "panPost": "Bannir le post",
+            "fullPan": "Bannissement définitif",
+            "pickDate": "Select Date",
+            "untilDate": "Ban untill",
+            "addPeriod": "Bannissement temporaire",
+            "periodDays": "Nombre de jours",
+            "enterDays": "Saisir le nombre de jours",
+            "requireAction": "Nécessite une action",
+            "fullBan": "Bannissement complet",
+            "partialBan": "Partial Ban",
+            "postsBan": "Bannissement des publications",
+            "ignored": "Ignoré",
+            "admin": "Administrateur",
+            "lawyer": "Avocat",
+            "officer": "Officier",
+            "client": "Client"
+          }
+        },
+        "consultationPackages": {
+          "title": "Forfaits de consultation",
+          "path": "Forfaits de consultation > Liste",
+          "addTitle": "Ajouter un forfait de consultation",
+          "editTitle": "Modifier le forfait de consultation",
+          "list": "Liste des forfaits de consultation",
+          "loading": "Chargement des forfaits de consultation...",
+          "columns": {
+            "name": "Nom du forfait",
+            "numberOfConsultations": "Nombre de consultations",
+            "price": "Prix",
+            "status": "Statut"
+          },
+          "fields": {
+            "name": "Nom du forfait de consultation",
+            "numberOfConsultations": "Nombre de consultations",
+            "price": "Prix du forfait",
+            "isActive": "Statut d'activation du forfait",
+            "enterName": "Entrez le nom du forfait",
+            "enterNumberOfConsultations": "Entrez le nombre de consultations",
+            "enterPrice": "Entrez le prix"
+          },
+          "validation": {
+            "nameRequired": "Le nom du forfait est requis",
+            "numberOfConsultationsRequired": "Doit être au moins 1",
+            "priceRequired": "Doit être 0 ou plus"
+          },
+          "status": {
+            "active": "Forfait activé avec succès",
+            "inactive": "Forfait désactivé avec succès"
+          }
+        }
+      },
+      "forms": {
+        "fields": {
+          "name": "Nom",
+          "nameEn": "Nom (Anglais)",
+          "nameAr": "Nom (Arabe)",
+          "description": "Description",
+          "enterName": "Entrez le nom",
+          "enterNameEn": "Entrez le nom en anglais",
+          "enterNameAr": "Entrez le nom en arabe",
+          "enterDescription": "Entrez la description"
+        }
+      },
+      "table": {
+        "actions": "Actions",
+        "loading": "Chargement...",
+        "noData": "Aucune donnée disponible",
+        "search": "Rechercher",
+        "rowsPerPage": "Lignes par page :",
+        "pagination": {
+          "previous": "Précédent",
+          "next": "Suivant",
+          "first": "Premier",
+          "last": "Dernier",
+          "page": "Page",
+          "of": "sur",
+          "showing": "Affichage de",
+          "to": "à",
+          "results": "résultats",
+          "totalResults": "résultats totaux"
+        }
+      }
+    }
+  },
+  "table": {
+    "actions": "Actions",
+    "loading": "Chargement...",
+    "noData": "Aucune donnée disponible",
+    "search": "Rechercher",
+    "rowsPerPage": "Lignes par page :",
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "first": "Premier",
+      "last": "Dernier",
+      "page": "Page",
+      "of": "sur",
+      "showing": "Affichage de",
+      "to": "à",
+      "results": "résultats",
+      "totalResults": "résultats totaux"
+    }
+  }
+}

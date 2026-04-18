@@ -1,0 +1,537 @@
+﻿{
+    "dir": "rtl",
+    "common": {
+        "dashboard": "لوحة التحكم",
+        "logout": "تسجيل الخروج",
+        "user": "المستخدم",
+        "all": "الكل",
+        "lawyer": "محامي",
+        "type": "النوع",
+        "officer": "محضر قضائي",
+        "client": "عميل",
+        "role": "الدور",
+        "loading": "جاري التحميل...",
+        "updating": "جاري التحديث...",
+        "saving": "جاري الحفظ...",
+        "deleting": "جاري الحذف...",
+        "error": "خطأ",
+        "success": "نجح",
+        "cancel": "إلغاء",
+        "confirm": "تأكيد",
+        "save": "حفظ",
+        "edit": "تعديل",
+        "delete": "حذف",
+        "add": "إضافة",
+        "search": "بحث",
+        "filter": "تصفية",
+        "actions": "الإجراءات",
+        "view": "عرض",
+        "update": "تحديث",
+        "create": "إنشاء",
+        "back": "رجوع",
+        "next": "التالي",
+        "previous": "السابق",
+        "submit": "إرسال",
+        "reset": "إعادة تعيين",
+        "close": "إغلاق",
+        "open": "فتح",
+        "select": "اختيار",
+        "clear": "مسح",
+        "refresh": "تحديث",
+        "download": "تحميل",
+        "upload": "رفع",
+        "export": "تصدير",
+        "import": "استيراد",
+        "print": "طباعة",
+        "share": "مشاركة",
+        "copy": "نسخ",
+        "accept": "قبول",
+        "rowsPerPage": "عدد الصفوف في الصفحة",
+        "areYouSure": "هل أنت متأكد تماماً؟",
+        "aboutToAccept": "أنت على وشك قبول المحامي:",
+        "aboutToDelete": "أنت على وشك حذف:"
+    },
+    "lawyerPackages": {
+        "title": "باقات المحاميين",
+        "description": "إدارة باقات المحاميين",
+        "addPackage": "إضافة باقة",
+        "editPackage": "تعديل باقة",
+        "deletePackage": "حذف باقة",
+        "packageDeleted": "تم حذف باقة بنجاح",
+        "path": "باقات المحاميين / قائمة",
+        "packageAdded": "تم إضافة باقة بنجاح",
+        "packageUpdated": "تم تحديث باقة بنجاح",
+        "packageDeletedError": "فشل في حذف باقة",
+        "packageAddedError": "فشل في إضافة باقة",
+        "packageUpdatedError": "فشل في تحديث باقة",
+        "packageDeletedSuccess": "تم حذف باقة بنجاح",
+        "packageAddedSuccess": "تم إضافة باقة بنجاح",
+        "packageUpdatedSuccess": "تم تحديث باقة بنجاح",
+        "addPage": {
+            "breadcrumbAdd": "باقات المحامين / إضافة",
+            "createTitle": "إنشاء باقة جديدة",
+            "namePlaceholder": "مثال: باقة الذهبية",
+            "nameRequired": "الاسم مطلوب",
+            "disableHint": "يمكنك تعطيل الباقة لإخفائها عن المحامين.",
+            "createButton": "إنشاء الباقة",
+            "cancelButton": "إلغاء",
+            "updateButton": "تحديث الباقة",
+            "isActivePlaceholder": "الحالة النشط",
+            "isActiveDescription": "إلغاء النشط لجعل الباقة غير مرئية للمحامين.",
+            "numberOfCasesPlaceholder": "عدد القضايا",
+            "name": "الاسم",
+            "numberOfCasesRequired": "عدد القضايا مطلوب",
+            "numberOfAssistantsPlaceholder": "عدد المساعدات",
+            "numberOfAssistantsRequired": "عدد المساعدات مطلوب",
+            "durationPlaceholder": "الدورة (الايام)",
+            "durationRequired": "الدورة (الايام) مطلوب",
+            "pricePlaceholder": "السعر",
+            "priceRequired": "السعر مطلوب",
+            "headingPlaceholder": "العنوان",
+            "headingRequired": "العنوان مطلوب",
+            "deletedSuccessfully": "تم حذف باقة بنجاح",
+            "deletedFailed": "فشل في حذف باقة",
+            "updatedSuccessfully": "تم تحديث باقة بنجاح",
+            "updatedFailed": "فشل في تحديث باقة",
+            "addedSuccessfully": "تم إضافة باقة بنجاح",
+            "addedFailed": "فشل في إضافة باقة"
+        },
+        "table": {
+            "name": "الاسم",
+            "price": "السعر",
+            "duration": "الدورة",
+            "actions": "الإجراءات",
+            "numberOfCases": "القضية",
+            "numberOfAssistants": "المساعدات",
+            "durationInDays": "الدورة (الايام)",
+            "status": "الحالة",
+            "statusActive": "نشط",
+            "statusInactive": "غير نشط"
+        }
+    },
+    "subscriptions": {
+        "title": "سجل الاشتراكات",
+        "breadcrumb": "باقات المحامين > سجل الاشتراكات",
+        "table": {
+            "lawyerName": "اسم المحامي",
+            "packageName": "اسم الباقة",
+            "startDate": "تاريخ البدء",
+            "endDate": "تاريخ الانتهاء",
+            "price": "السعر",
+            "status": "الحالة"
+        },
+        "status": {
+            "active": "نشط",
+            "expired": "منتهي",
+            "cancelled": "ملغى"
+        }
+    },
+    "navigation": {
+        "dashboard": "لوحة التحكم",
+        "lawyerRequests": "طلبات المحاميين الجدد",
+        "adsManagement": "إدارة الإعلانات",
+        "lawyerPackages": "باقات المحاميين",
+        "transactions": "المعاملات",
+        "dropdownManagement": "إدارة القوائم المنسدلة",
+        "casePhase": "مرحلة القضية",
+        "caseCategory": "فئة القضية",
+        "caseChamber": "غرفة القضية",
+        "specialization": "التخصصات",
+        "states": "الولايات",
+        "pendingLawyers": "طلبات التوثيق",
+        "reportsManagement": "إدارة البلاغات",
+        "consultationPackages": "باقات الاستشارات"
+    },
+    "home": {
+        "title": "لوحة التحكم",
+        "welcome": "مرحباً بك في لوحة التحكم الإدارية",
+        "overview": "نظرة عامة",
+        "statistics": "الإحصائيات",
+        "filters": {
+            "lawyerName": "اسم المستخدم",
+            "selectLawyer": "اختر المحامي",
+            "allLawyers": "جميع المحامين",
+            "startDate": "تاريخ البدء",
+            "endDate": "تاريخ الانتهاء",
+            "datePlaceholder": "ش/ي/س"
+        },
+        "charts": {
+            "totalCount": "إجمالي",
+            "value": "قيمة",
+            "formRequests": "عدد طلبات النماذج",
+            "formRequestsLawyer": "عدد طلبات النماذج (محامي)",
+            "formRequestsOfficer": "عدد طلبات النماذج (محضر)",
+            "numberOfCases": "عدد القضايا",
+            "numberOfPublishedConsultations": "عدد الإستشارات المنشوره",
+            "numberOfPublishedCases": "عدد القضايا المنشوره",
+            "numberOfpublicationsLawyerAndJudgeEmployee": "عدد المنشورات(المحامي + المحضر القضائي)",
+            "numberOfConsultingTransactions": "عدد معاملات الإستشارات",
+            "numberOfAiImage": "عدد الصور باستحدام الذكاء الإصطناعي",
+            "numberOfAiPetitions": "عدد العرائض باستخدام الذكاء الاصطناعي ",
+            "monthlyData": "البيانات الشهرية",
+            "analytics": "التحليلات",
+            "reports": "التقارير"
+        },
+        "months": {
+            "jan": "يناير",
+            "feb": "فبراير",
+            "mar": "مارس",
+            "apr": "أبريل",
+            "may": "مايو",
+            "jun": "يونيو",
+            "jul": "يوليو",
+            "aug": "أغسطس",
+            "sep": "سبتمبر",
+            "oct": "أكتوبر",
+            "nov": "نوفمبر",
+            "dec": "ديسمبر"
+        },
+        "sections": {
+            "judgeEmployee": "المحضر القضائي",
+            "lawyer": "المحامي"
+        }
+    },
+    "auth": {
+        "login": "تسجيل الدخول",
+        "logout": "تسجيل الخروج",
+        "signIn": "تسجيل الدخول",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "enterEmail": "أدخل البريد ال الإلكتروني",
+        "enterPassword": "أدخل كلمة المرور",
+        "forgotPassword": "نسيت كلمة المرور؟",
+        "rememberMe": "تذكرني",
+        "loginSuccess": "تم تسجيل الدخول بنجاح",
+        "loginError": "فشل في تسجيل الدخول",
+        "logoutSuccess": "تم تسجيل الخ روج بنجاح",
+        "loginDescription": "سجل الدخول للوصول إلى حسابك واستكشاف جميع الميزات.",
+        "loginFailed": "فشل في تسجيل الدخول. يرجى المحاولة مرة أخرى.",
+        "logoutConfirm": "هل أنت متأكد من أنك تريد تسجيل الخروج؟"
+    },
+    "validation": {
+        "required": "هذا الحقل مطلوب",
+        "email": "يرجى إدخال بريد إلكتروني صحيح",
+        "password": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+        "confirmPassword": "كلمات المرور يجب أن تتطابق",
+        "minLength": "الحد الأدنى للطول هو {{min}} أحرف",
+        "maxLength": "الحد الأقصى للطول هو {{max}} أحرف"
+    },
+    "messages": {
+        "deleteConfirm": "هل أنت متأكد من أنك تريد حذف هذا العنصر؟",
+        "unsavedChanges": "لديك تغييرات غير محفوظة. هل أنت متأكد من أنك تريد المغادرة؟",
+        "operationSuccess": "تمت العملية بنجاح",
+        "operationError": "حدث خطأ أثناء معالجة طلبك",
+        "noData": "لا توجد بيانات متاحة",
+        "connectionError": "خطأ في الاتصال. يرجى المحاولة مرة أخرى.",
+        "permissionDenied": "تم رفض الإذن",
+        "sessionExpired": "انتهت جلسة العمل. يرجى تسجيل الدخول مرة أخرى."
+    },
+    "toasts": {
+        "success": {
+            "casePhaseSaved": "تم حفظ مرحلة القضية بنجاح!",
+            "caseChamberSaved": "تم حفظ غرفة القضية بنجاح!",
+            "caseCategorySaved": "تم حفظ فئة القضية بنجاح!",
+            "specializationsSaved": "تم حفظ التخصص بنجاح!",
+            "specializationsUpdated": "تم تحديث التخصص بنجاح!",
+            "specializationsDeleted": "تم حذف التخصص بنجاح!",
+            "stateSaved": "تم حفظ الولاية بنجاح!",
+            "bannerSaved": "تم حفظ الإعلان بنجاح!",
+            "bannerUpdated": "تم تحديث الإعلان بنجاح!",
+            "bannerDeleted": "تم حذف الإعلان بنجاح!",
+            "consultationPackageSaved": "تم حفظ باقة الاستشارات بنجاح!",
+            "consultationPackageUpdated": "تم تحديث باقة الاستشارات بنجاح!",
+            "consultationPackageDeleted": "تم حذف باقة الاستشارات بنجاح!",
+            "updateSuccess": "تم التحديث بنجاح!",
+            "deleteSuccess": "تم الحذف بنجاح!"
+        },
+        "error": {
+            "createFailed": "فشل في الإنشاء. يرجى المحاولة مرة أخرى.",
+            "updateFailed": "فشل في التحديث. يرجى المحاولة مرة أخرى.",
+            "deleteFailed": "فشل في الحذف. يرجى المحاولة مرة أخرى.",
+            "fetchFailed": "فشل في جلب البيانات. يرجى المحاولة مرة أخرى."
+        }
+    },
+    "pages": {
+        "consultationPackages": {
+            "title": "باقات الاستشارات",
+            "path": "باقات الاستشارات \u003e القائمة",
+            "addTitle": "إضافة باقة استشارات",
+            "editTitle": "تعديل باقة الاستشارات",
+            "packageName": "اسم الباقة",
+            "numberOfConsultations": "عدد الاستشارات",
+            "price": "سعر الباقة",
+            "list": "قائمة باقات الاستشارات",
+            "loading": "جاري تحميل باقات الاستشارات...",
+            "columns": {
+                "name": "اسم الباقة",
+                "numberOfConsultations": "عدد الاستشارات",
+                "price": "السعر",
+                "status": "الحالة"
+            },
+            "fields": {
+                "name": "اسم باقة الاستشارات",
+                "numberOfConsultations": "عدد الاستشارات",
+                "price": "سعر الباقة",
+                "isActive": "حالة تفعيل الباقة",
+                "enterName": "أدخل اسم الباقة",
+                "enterNumberOfConsultations": "أدخل عدد الاستشارات",
+                "enterPrice": "أدخل السعر"
+            },
+            "validation": {
+                "nameRequired": "اسم الباقة مطلوب",
+                "numberOfConsultationsRequired": "عدد الاستشارات مطلوب",
+                "priceRequired": "السعر مطلوب"
+            },
+            "status": "الحالة",
+            "statusMessages": {
+                "active": "تم تفعيل الباقة بنجاح",
+                "inactive": "تم تعطيل الباقة بنجاح"
+            },
+            "active": "نشط",
+            "inactive": "غير نشط",
+            "form": {
+                "packageDetails": "تفاصيل الباقة",
+                "packageName": "اسم الباقة",
+                "namePlaceholder": "أدخل اسم الباقة",
+                "numberOfConsultations": "عدد الاستشارات",
+                "consultationsPlaceholder": "أدخل عدد الاستشارات",
+                "price": "السعر",
+                "pricePlaceholder": "أدخل السعر",
+                "isActive": "مفعل",
+                "save": "حفظ الباقة",
+                "update": "تحديث الباقة"
+            }
+        },
+        "lawyerRequests": {
+            "title": "طلبات المحامين",
+            "path": "طلبات المحامين \u003e القائمة",
+            "loading": "جاري تحميل طلبات المحامين...",
+            "searchPlaceholder": "البحث عن المحامين بالاسم أو البريد الإلكتروني أو الهاتف أو العنوان...",
+            "columns": {
+                "name": "الاسم",
+                "email": "البريد الإلكتروني",
+                "phone": "رقم الهاتف",
+                "address": "العنوان"
+            },
+            "actions": {
+                "accept": "قبول",
+                "accepted": "تم القبول"
+            }
+        },
+        "platformFees": {
+            "title": "رسوم المنصة",
+            "path": "رسوم المنصة \u003e إضافة رسوم المنصة",
+            "addTitle": "إضافة رسوم المنصة",
+            "fields": {
+                "platformFee": "رسوم المنصة",
+                "enterPlatformFee": "أدخل رسوم المنصة",
+                "valueType": "نوع القيمة",
+                "percentage": "نسبة مئوية",
+                "fixed": "ثابت",
+                "value": "القيمة",
+                "valuePlaceholder": "0%"
+            }
+        },
+        "transactions": {
+            "title": "المعاملات",
+            "path": "المعاملات \u003e القائمة",
+            "columns": {
+                "clientName": "اسم العميل",
+                "lawyerName": "اسم المحامي",
+                "answerPrice": "سعر الإجابة",
+                "platformFees": "رسوم المنصة",
+                "lawyerShare": "حصة المحامي",
+                "transactionDate": "تاريخ المعاملة"
+            },
+            "dateFilter": "تصفية حسب التاريخ"
+        },
+        "casePhase": {
+            "title": "مرحلة القضية",
+            "path": "إدارة القوائم المنسدلة \u003e مرحلة القضية",
+            "addTitle": "إضافة مرحلة قضية",
+            "editTitle": "تعديل مرحلة القضية",
+            "list": "قائمة مراحل القضايا",
+            "loading": "جاري تحميل مراحل القضايا...",
+            "columns": {
+                "valueKey": "مفتاح القيمة",
+                "english": "الإنجليزية",
+                "arabic": "العربية",
+                "french": "الفرنسية"
+            }
+        },
+        "caseCategory": {
+            "title": "فئة القضية",
+            "path": "إدارة القوائم المنسدلة \u003e فئة القضية",
+            "addTitle": "إضافة فئة قضية",
+            "editTitle": "تعديل فئة القضية",
+            "list": "قائمة فئات القضايا",
+            "loading": "جاري تحميل فئات القضايا...",
+            "columns": {
+                "valueKey": "مفتاح القيمة",
+                "english": "الإنجليزية",
+                "arabic": "العربية",
+                "french": "الفرنسية"
+            }
+        },
+        "caseChamber": {
+            "title": "غرفة القضية",
+            "path": "إدارة القوائم المنسدلة \u003e غرفة القضية",
+            "addTitle": "إضافة غرفة قضية",
+            "editTitle": "تعديل غرفة القضية",
+            "list": "قائمة غرف القضايا",
+            "loading": "جاري تحميل غرف القضايا...",
+            "columns": {
+                "valueKey": "مفتاح القيمة",
+                "english": "الإنجليزية",
+                "arabic": "العربية",
+                "french": "الفرنسية"
+            }
+        },
+        "specialization": {
+            "title": "التخصصات",
+            "path": "إدارة القوائم المنسدلة \u003e التخصصات",
+            "addTitle": "إضافة تخصص",
+            "editTitle": "تعديل التخصص",
+            "list": "قائمة التخصصات",
+            "loading": "جاري تحميل التخصصات...",
+            "columns": {
+                "valueKey": "مفتاح القيمة",
+                "english": "الإنجليزية",
+                "arabic": "العربية",
+                "french": "الفرنسية"
+            }
+        },
+        "states": {
+            "title": "الولايات",
+            "path": "إدارة القوائم المنسدلة \u003e الولايات",
+            "addTitle": "إضافة ولاية",
+            "editTitle": "تعديل الولاية",
+            "list": "قائمة الولايات",
+            "loading": "جاري تحميل الولايات...",
+            "columns": {
+                "english": "الإنجليزية",
+                "arabic": "العربية",
+                "french": "الفرنسية"
+            }
+        },
+        "banners": {
+            "title": "الإعلانات",
+            "path": "الإعلانات \u003e القائمة",
+            "addTitle": "إضافة إعلان",
+            "editTitle": "تعديل الإعلان",
+            "list": "قائمة الإعلانات",
+            "loading": "جاري تحميل الإعلانات...",
+            "columns": {
+                "image": "الصورة",
+                "link": "الرابط",
+                "status": "الحالة"
+            },
+            "fields": {
+                "image": "صورة الإعلان",
+                "link": "الرابط",
+                "status": "الحالة",
+                "enterLink": "أدخل رابط URL",
+                "uploadImage": "رفع صورة الإعلان"
+            },
+            "validation": {
+                "linkRequired": "الرابط مطلوب",
+                "linkInvalid": "يرجى إدخال رابط صحيح (مثال: https://example.com)",
+                "imageRequired": "صورة الإعلان مطلوبة"
+            },
+            "status": {
+                "active": "نشط",
+                "inactive": "غير نشط"
+            }
+        },
+        "pendingLawyers": {
+            "title": "طلبات التوثيق",
+            "path": "طلبات التوثيق \u003e القائمة",
+            "loading": "جاري تحميل المحامين المعلقين...",
+            "searchPlaceholder": "البحث عن المحامين بالاسم أو البريد الإلكتروني أو الهاتف أو العنوان...",
+            "columns": {
+                "name": "الاسم",
+                "email": "البريد الإلكتروني",
+                "phone": "رقم الهاتف",
+                "role": "الدور",
+                "address": "العنوان",
+                "status": "الحالة",
+                "files": "المستندات"
+            },
+            "actions": {
+                "accept": "قبول",
+                "accepted": "تم القبول"
+            }
+        },
+        "reportsManagement": {
+            "title": "إدارة البلاغات",
+            "path": "إداره البلاغات \u003e القائمه",
+            "loading": "جاري تحميل البلاغات...",
+            "selectAction": "يرجى اختيار إجراء",
+            "pleaseAddPeriod": "يحب ادخال المده",
+            "actionSuccess": "تم اتخاد الاجراء بنجاح",
+            "takeAction": "اتخاذ إجراء",
+            "columns": {
+                "createdBy": "أنشأه",
+                "createdByRole": "دور المنشئ",
+                "phone": "محتوى المنشور",
+                "reportedBy": "أُبلغ بواسطة",
+                "reportedByRole": "دور المُبلِّغ",
+                "comment": "تعليق",
+                "status": "الحالة"
+            },
+            "actions": {
+                "takeAction": "اتخاذ إجراء",
+                "dismissReport": "رفض البلاغ",
+                "pickDate": "اختر التاريخ",
+                "untilDate": "حظر الى",
+                "panUser": "حظر المستخدم",
+                "panPost": "حظر المنشور",
+                "fullPan": "حظر دائم",
+                "addPeriod": "حظر مؤقت",
+                "periodDays": "عدد الأيام",
+                "enterDays": "أدخل عدد الأيام",
+                "requireAction": "يتطلب إجراء",
+                "fullBan": "حظر كامل",
+                "partialBan": "حظر مؤقت",
+                "postsBan": "حظر المنشورات",
+                "ignored": "تم التجاهل",
+                "all": "الكل",
+                "admin": "مسؤول",
+                "lawyer": "محامي",
+                "officer": "محضر",
+                "client": "عميل"
+            }
+        }
+    },
+    "forms": {
+        "fields": {
+            "name": "الاسم",
+            "nameEn": "الاسم (بالإنجليزية)",
+            "nameAr": "الاسم (بالعربية)",
+            "description": "الوصف",
+            "enterName": "أدخل الاسم بالفرنسيه",
+            "enterNameEn": "أدخل الاسم بالإنجليزية",
+            "enterNameAr": "أدخل الاسم بالعربية",
+            "enterDescription": "أدخل الوصف"
+        }
+    },
+    "table": {
+        "actions": "الإجراءات",
+        "loading": "جاري التحميل...",
+        "noData": "لا توجد بيانات متاحة",
+        "search": "بحث",
+        "rowsPerPage": "عدد الصفوف في الصفحة",
+        "pagination": {
+            "previous": "السابق",
+            "next": "التالي",
+            "first": "الأول",
+            "last": "الأخير",
+            "page": "صفحة",
+            "of": "من",
+            "showing": "عرض",
+            "to": "إلى",
+            "results": "نتائج",
+            "totalResults": "إجمالي النتائج"
+        }
+    }
+}

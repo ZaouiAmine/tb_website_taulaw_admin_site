@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-npm i
-npm audit fix -f
-npm run build && mv dist/template/* /out
+npm install
+npm run build
+cp -r dist/. /out/

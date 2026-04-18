@@ -1,0 +1,2 @@
+*.sh text eol=lf
+.taubyte/* text eol=lf
