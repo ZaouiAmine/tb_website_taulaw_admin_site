@@ -9,8 +9,16 @@ import {
 import { refreshAccessToken } from "@/services/auth";
 import i18n from "@/i18n";
 
+function resolveApiBaseURL(): string {
+  const v = import.meta.env.VITE_API_BASE_URL;
+  if (typeof v === "string" && v.trim() !== "") {
+    return v.replace(/\/$/, "");
+  }
+  return "https://tyx9xuts0.gen.aventr.cloud";
+}
+
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://tyx9xuts0.gen.aventr.cloud",
+  baseURL: resolveApiBaseURL(),
 });
 
 let isRefreshing = false;
