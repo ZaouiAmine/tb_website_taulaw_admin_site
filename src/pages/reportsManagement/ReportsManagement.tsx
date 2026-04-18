@@ -39,8 +39,21 @@ const deriveReportAction = (report: Report) => {
   let isFullBan: boolean | null = null;
   let untilDate: Date | undefined = undefined;
 
+  if (typeof report.status === "string") {
+    const s = report.status.toLowerCase();
+    if (s === "pending") {
+      return {
+        actionType: ReportStatusEnum.Pending,
+        isFullBan: null,
+        untilDate: undefined,
+      };
+    }
+    return { actionType: ReportStatusEnum.Ignored, isFullBan: null, untilDate: undefined };
+  }
+
   // Use the action field from the response (which matches the status)
-  actionType = (report.action as number) || (report.status as number);
+  actionType =
+    (report.action as number) || (report.status as number) || ReportStatusEnum.Ignored;
 
   switch (actionType) {
     case ReportStatusEnum.Banned:
@@ -157,12 +170,14 @@ export default function ReportsManagement() {
       key: "createdBy",
       header: t("pages.reportsManagement.columns.createdBy"),
       width: "20%",
+      render: (row) => row.createdBy ?? "—",
     },
     {
       key: "createdByRole",
       header: t("pages.reportsManagement.columns.createdByRole"),
       width: "20%",
       render: (row) => {
+        if (row.createdByRole == null) return "—";
         switch (Number(row.createdByRole)) {
           case 1:
             return t("pages.reportsManagement.actions.admin");
@@ -172,34 +187,42 @@ export default function ReportsManagement() {
             return t("pages.reportsManagement.actions.officer");
           case 4:
             return t("pages.reportsManagement.actions.client");
+          default:
+            return "—";
         }
       },
     },
     {
       key: "userPost.content",
       header: t("pages.reportsManagement.columns.phone"),
-      render: (row) => (
-        <Dialog>
-          <DialogTrigger>
-            {row.userPost.content.slice(0, 50) + "..."}
-          </DialogTrigger>
-          <DialogContent className="w-fit py-8">
-            <p className="text-gray-700 text-lg">{row.userPost.content}</p>
-          </DialogContent>
-        </Dialog>
-      ),
+      render: (row) => {
+        const text =
+          row.userPost?.content ?? row.reason?.trim() ?? "";
+        const preview =
+          text.length > 50 ? text.slice(0, 50) + "..." : text || "—";
+        return (
+          <Dialog>
+            <DialogTrigger>{preview}</DialogTrigger>
+            <DialogContent className="w-fit py-8">
+              <p className="text-gray-700 text-lg">{text || "—"}</p>
+            </DialogContent>
+          </Dialog>
+        );
+      },
       width: "20%",
     },
     {
       key: "reportedBy",
       header: t("pages.reportsManagement.columns.reportedBy"),
       width: "30%",
+      render: (row) => row.reportedBy ?? "—",
     },
     {
       key: "reportedByRole",
       header: t("pages.reportsManagement.columns.reportedByRole"),
       width: "30%",
       render: (row) => {
+        if (row.reportedByRole == null) return "—";
         switch (row.reportedByRole) {
           case 1:
             return t("pages.reportsManagement.actions.admin");
@@ -209,22 +232,27 @@ export default function ReportsManagement() {
             return t("pages.reportsManagement.actions.officer");
           case 4:
             return t("pages.reportsManagement.actions.client");
+          default:
+            return "—";
         }
       },
     },
     {
       key: "comment",
       header: t("pages.reportsManagement.columns.comment"),
-      render: (row) => (
-        <Dialog>
-          <DialogTrigger>
-            {row.comment ? row.comment.slice(0, 50) + "..." : "-"}
-          </DialogTrigger>
-          <DialogContent className="w-fit py-8">
-            <p className="text-gray-700 text-lg">{row.comment}</p>
-          </DialogContent>
-        </Dialog>
-      ),
+      render: (row) => {
+        const c = row.comment?.trim();
+        const preview =
+          c && c.length > 50 ? c.slice(0, 50) + "..." : c || "—";
+        return (
+          <Dialog>
+            <DialogTrigger>{preview}</DialogTrigger>
+            <DialogContent className="w-fit py-8">
+              <p className="text-gray-700 text-lg">{c || "—"}</p>
+            </DialogContent>
+          </Dialog>
+        );
+      },
       width: "15%",
     },
     {
@@ -232,6 +260,16 @@ export default function ReportsManagement() {
       header: t("pages.reportsManagement.columns.status"),
       width: "15%",
       render: (row) => {
+        if (typeof row.status === "string") {
+          const s = row.status.toLowerCase();
+          if (s === "pending") {
+            return t("pages.reportsManagement.actions.requireAction");
+          }
+          if (s === "accepted" || s === "rejected" || s === "reviewed") {
+            return s;
+          }
+          return row.status;
+        }
         switch (row.status) {
           case ReportStatusEnum.Pending:
             return t("pages.reportsManagement.actions.requireAction");
@@ -246,6 +284,8 @@ export default function ReportsManagement() {
             return t("pages.reportsManagement.actions.postsBan");
           case ReportStatusEnum.Ignored:
             return t("pages.reportsManagement.actions.ignored");
+          default:
+            return "—";
         }
       },
     },

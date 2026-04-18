@@ -213,19 +213,22 @@ export type UserPost = {
 };
 export type Report = {
   id: string;
-  createdBy: string;
-  createdByRole: number;
-  reportedBy: string;
-  reportedByRole: number;
+  /** Present on Taubyte seed/API; legacy Nest used userPost body instead */
+  reason?: string;
+  createdBy?: string;
+  createdByRole?: number;
+  reportedBy?: string;
+  reportedByRole?: number;
 
-  canAccess: boolean;
-  canPost: boolean;
-  untilDate: string | null;
-  status: number;
-  comment: string;
-  action: number;
-  PostDate: string | null;
-  userPost: UserPost;
+  canAccess?: boolean;
+  canPost?: boolean;
+  untilDate?: string | null;
+  /** Numeric (legacy) or string status from API ("pending", "reviewed", …) */
+  status?: number | string;
+  comment?: string;
+  action?: number;
+  PostDate?: string | null;
+  userPost?: UserPost;
 };
 
 export const ReportStatusEnum = {
