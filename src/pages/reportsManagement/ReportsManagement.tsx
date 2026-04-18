@@ -193,7 +193,7 @@ export default function ReportsManagement() {
       },
     },
     {
-      key: "userPost.content",
+      key: "reason",
       header: t("pages.reportsManagement.columns.phone"),
       render: (row) => {
         const text =
