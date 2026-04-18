@@ -10,7 +10,7 @@ import { refreshAccessToken } from "@/services/auth";
 import i18n from "@/i18n";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://ct9mcrqk1.gen.aventr.cloud",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://tyx9xuts0.gen.aventr.cloud",
 });
 
 let isRefreshing = false;
