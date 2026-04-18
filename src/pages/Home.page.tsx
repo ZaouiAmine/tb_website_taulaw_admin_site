@@ -35,8 +35,15 @@ export default function HomePage() {
     lawyerId: selectedLawyer === "all" ? undefined : selectedLawyer,
   });
 
+  // API returns Nest pagination: { code, response: { data: [...], totalPages, ... } }
+  const lawyersListRaw = requestsData?.response;
+  const lawyersList = Array.isArray(lawyersListRaw)
+    ? lawyersListRaw
+    : lawyersListRaw?.data;
   const lawyerNames =
-    requestsData?.response?.map((request: any) => request.name) || [];
+    (Array.isArray(lawyersList) ? lawyersList : []).map(
+      (request: { name?: string }) => request.name
+    ) || [];
   const uniqueLawyerNames = [...new Set(lawyerNames)].filter(
     Boolean
   ) as string[];
