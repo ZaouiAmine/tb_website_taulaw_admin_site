@@ -1,0 +1,1 @@
+import{a as g,g as r}from"./index-BXbmnsr9.js";const i=()=>{const{t:n,i18n:a}=g(),t=e=>{a.changeLanguage(e),r.set("i18nextLng",e,{expires:365,sameSite:"strict",path:"/"})},s=a.language==="ar";return{t:n,i18n:a,changeLanguage:t,isRTL:s,currentLanguage:a.language}};export{i as u};
