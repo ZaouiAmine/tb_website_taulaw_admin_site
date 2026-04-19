@@ -46,7 +46,9 @@ export const updateCaseChamber = async (
   data: UpdateCaseChamberRequest
 ): Promise<void> => {
   try {
-    await axiosInstance.patch(`/case-chambers/update/${id}`, data);
+    await axiosInstance.patch("/case-chambers/update", data, {
+      params: { id },
+    });
   } catch (error) {
     console.error(error);
     throw error;
@@ -55,7 +57,9 @@ export const updateCaseChamber = async (
 
 export const deleteCaseChamber = async (id: string): Promise<void> => {
   try {
-    await axiosInstance.delete(`/case-chambers/delete/${id}`);
+    await axiosInstance.delete("/case-chambers/delete", {
+      params: { id },
+    });
   } catch (error) {
     console.error(error);
     throw error;

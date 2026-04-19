@@ -32,7 +32,9 @@ export const getConsultationPackages = async (
 };
 
 export const getConsultationPackage = async (id: string): Promise<ConsultationPackage> => {
-  const response = await axiosInstance.get(`/consultation-packages/${id}`);
+  const response = await axiosInstance.get("/consultation-packages/item", {
+    params: { id },
+  });
   return response.data.response;
 };
 
@@ -46,9 +48,13 @@ export const updateConsultationPackage = async (
   id: string,
   data: UpdateConsultationPackageData
 ): Promise<void> => {
-  await axiosInstance.patch(`/consultation-packages/${id}`, data);
+  await axiosInstance.patch("/consultation-packages/item", data, {
+    params: { id },
+  });
 };
 
 export const deleteConsultationPackage = async (id: string): Promise<void> => {
-  await axiosInstance.delete(`/consultation-packages/${id}`);
+  await axiosInstance.delete("/consultation-packages/item", {
+    params: { id },
+  });
 };

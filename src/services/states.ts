@@ -31,11 +31,15 @@ export const createState = async (data: CreateStateRequest): Promise<void> => {
 };
 
 export const updateState = async (id: string, data: UpdateStateRequest) => {
-  const response = await axiosInstance.patch(`/states/update/${id}`, data);
+  const response = await axiosInstance.patch("/states/update", data, {
+    params: { id },
+  });
   return response.data;
 };
 
 export const deleteState = async (id: string) => {
-  const response = await axiosInstance.delete(`/states/delete/${id}`);
+  const response = await axiosInstance.delete("/states/delete", {
+    params: { id },
+  });
   return response.data;
 };

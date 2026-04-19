@@ -46,7 +46,9 @@ export const updateCasePhase = async (
   data: UpdateCasePhaseRequest
 ): Promise<void> => {
   try {
-    await axiosInstance.patch(`/case-phases/update/${id}`, data);
+    await axiosInstance.patch("/case-phases/update", data, {
+      params: { id },
+    });
   } catch (error) {
     console.error(error);
     throw error;
@@ -55,7 +57,9 @@ export const updateCasePhase = async (
 
 export const deleteCasePhase = async (id: string): Promise<void> => {
   try {
-    await axiosInstance.delete(`/case-phases/delete/${id}`);
+    await axiosInstance.delete("/case-phases/delete", {
+      params: { id },
+    });
   } catch (error) {
     console.error(error);
     throw error;

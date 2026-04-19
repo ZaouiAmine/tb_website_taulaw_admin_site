@@ -29,7 +29,9 @@ export const getBanners = async (params: BannerParams = {}): Promise<ApiResponse
 };
 
 export const getBanner = async (id: string): Promise<Banner> => {
-  const response = await axiosInstance.get(`/banners/${id}`);
+  const response = await axiosInstance.get("/banners/item", {
+    params: { id },
+  });
   return response.data.response;
 };
 
@@ -75,7 +77,9 @@ export const updateBanner = async (id: string, data: UpdateBannerData): Promise<
       formData.append('type', data.type);
     }
     
-    await axiosInstance.patch(`/banners/${id}`, formData);
+    await axiosInstance.patch("/banners/item", formData, {
+      params: { id },
+    });
   } else {
     const payload: any = {};
     if (data.link !== undefined) {
@@ -87,10 +91,12 @@ export const updateBanner = async (id: string, data: UpdateBannerData): Promise<
     if (data.type !== undefined) {
       payload.type = data.type;
     }
-    await axiosInstance.patch(`/banners/${id}`, payload);
+    await axiosInstance.patch("/banners/item", payload, {
+      params: { id },
+    });
   }
 };
 
 export const deleteBanner = async (id: string): Promise<void> => {
-  await axiosInstance.delete(`/banners/${id}`);
+  await axiosInstance.delete("/banners/item", { params: { id } });
 };

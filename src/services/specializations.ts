@@ -46,7 +46,9 @@ export const updateSpecializations = async (
   data: IUpdateSpecializations
 ): Promise<void> => {
   try {
-    await axiosInstance.patch(`/specializations/update/${id}`, data);
+    await axiosInstance.patch("/specializations/update", data, {
+      params: { id },
+    });
   } catch (error) {
     console.error(error);
     throw error;
@@ -55,7 +57,9 @@ export const updateSpecializations = async (
 
 export const deleteSpecializations = async (id: string): Promise<void> => {
   try {
-    await axiosInstance.delete(`/specializations/delete/${id}`);
+    await axiosInstance.delete("/specializations/delete", {
+      params: { id },
+    });
   } catch (error) {
     console.error(error);
     throw error;

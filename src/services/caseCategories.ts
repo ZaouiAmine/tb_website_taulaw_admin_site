@@ -39,7 +39,9 @@ export const updateCaseCategory = async (
   data: CaseCategoryBodyType
 ): Promise<void> => {
   try {
-    await axiosInstance.patch(`/case-categories/update/${id}`, data);
+    await axiosInstance.patch("/case-categories/update", data, {
+      params: { id },
+    });
   } catch (error) {
     console.error("Error updating case category:", error);
     throw error;
@@ -49,7 +51,9 @@ export const updateCaseCategory = async (
 // ! Delete Case Category
 export const deleteCaseCategory = async (id: string): Promise<void> => {
   try {
-    await axiosInstance.delete(`/case-categories/delete/${id}`);
+    await axiosInstance.delete("/case-categories/delete", {
+      params: { id },
+    });
   } catch (error) {
     console.error("Error deleting case category:", error);
     throw error;

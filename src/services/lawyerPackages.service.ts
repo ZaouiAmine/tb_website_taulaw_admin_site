@@ -36,9 +36,9 @@ export const lawyerPackagesApi = {
   },
 
   getById: async (id: string): Promise<lawyerPackage> => {
-    const response = await axiosInstance.get(
-      `/lawyer-packages/${id}`
-    );
+    const response = await axiosInstance.get("/lawyer-packages/item", {
+      params: { id },
+    });
     return response.data.response;
   },
 
@@ -47,14 +47,17 @@ export const lawyerPackagesApi = {
     data: UpdateLawyerPackageDto
   ): Promise<lawyerPackage> => {
     const response = await axiosInstance.patch(
-      `/lawyer-packages/${id}`,
-      data
+      "/lawyer-packages/item",
+      data,
+      { params: { id } }
     );
     return response.data.response;
   },
 
   delete: async (id: string): Promise<void> => {
-    await axiosInstance.delete(`/lawyer-packages/${id}`);
+    await axiosInstance.delete("/lawyer-packages/item", {
+      params: { id },
+    });
   },
   cleanupExpiredSubscriptions: async (): Promise<CleanupResponse> => {
     const response = await axiosInstance.post<CleanupResponse>(
